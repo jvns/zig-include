@@ -1,5 +1,7 @@
-#define R_CAST(st)   (struct st*)
-
 struct test_struct { // just here so we can have something to use in the program
-    int x;
+    struct {
+        struct {
+            unsigned int y: 1;
+        } nested1;
+    } nested2;
 };
